@@ -1,9 +1,9 @@
 @mixin estructura($display: flex, $principal: center, $secundario: center)
-    if $display == flex
+    @if $display == flex
         display: $display
         justify-content: $principal
         align-items: $secundario
-    else if $display == grid
+    @else if $display == grid
         display: $display
         justify-items: $principal
         align-content: $secundario
